@@ -32,7 +32,7 @@ $$
 
 #### Code implementation:
 
-![Figure_0](master/Current_Progress/Summer20_week5/Hp_pics/Figure_0.png)
+![Figure_0](/Current_Progress/Summer20_week5/Hp_pics/Figure_0.png)
 
 #### Case1:
 
