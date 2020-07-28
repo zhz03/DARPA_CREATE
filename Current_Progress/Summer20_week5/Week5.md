@@ -36,42 +36,42 @@ $$
 
 #### Case1:
 
-![Figure_1](\Hp_pics\Figure_11.png?resize=350)
+![Figure_1](/Hp_pics/Figure_11.png?resize=350)
 
-![Figure_1](\Hp_pics\Figure_1.png?resize=350)
+![Figure_1](/Hp_pics/Figure_1.png?resize=350)
 
 #### Case2:
 
-![Figure_1](Hp_pics\Figure_21.png?resize=350)
+![Figure_1](/Hp_pics/Figure_21.png?resize=350)
 
-![Figure_1](Hp_pics\Figure_2.png?resize=350)
+![Figure_1](/Hp_pics/Figure_2.png?resize=350)
 
 #### Case3:
 
-![Figure_1](Hp_pics\Figure_31.png?resize=350)
+![Figure_1](/Hp_pics/Figure_31.png?resize=350)
 
-![Figure_1](Hp_pics\Figure_3.png?resize=350)
+![Figure_1](/Hp_pics/Figure_3.png?resize=350)
 
 #### Case4:
 
-![Figure_1](Hp_pics\Figure_41.png?resize=350)
+![Figure_1](/Hp_pics/Figure_41.png?resize=350)
 
-![Figure_1](Hp_pics\Figure_4.png?resize=350)
+![Figure_1](/Hp_pics/Figure_4.png?resize=350)
 
 #### Case5:
 
-![Figure_1](Hp_pics\Figure_51.png?resize=350)
+![Figure_1](/Hp_pics/Figure_51.png?resize=350)
 
-![Figure_1](Hp_pics\Figure_5.png?resize=350)
+![Figure_1](/Hp_pics/Figure_5.png?resize=350)
 
 #### Case6:
 
-![Figure_1](Hp_pics\Figure_61.png?resize=350)
+![Figure_1](/Hp_pics/Figure_61.png?resize=350)
 
-![Figure_1](Hp_pics\Figure_6.png?resize=350)
+![Figure_1](/Hp_pics/Figure_6.png?resize=350)
 
 #### Case7:
 
-![Figure_1](Hp_pics\Figure_71.png?resize=350)
+![Figure_1](/Hp_pics/Figure_71.png?resize=350)
 
-![Figure_1](Hp_pics\Figure_7.png?resize=350)
+![Figure_1](/Hp_pics/Figure_7.png?resize=350)
