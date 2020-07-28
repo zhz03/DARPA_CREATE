@@ -36,9 +36,9 @@ $$
 
 #### Case1:
 
-![Figure_1](Hp_pics\Figure_11.png?resize=350)
+![Figure_1](\Hp_pics\Figure_11.png?resize=350)
 
-![Figure_1](Hp_pics\Figure_1.png?resize=350)
+![Figure_1](\Hp_pics\Figure_1.png?resize=350)
 
 #### Case2:
 
