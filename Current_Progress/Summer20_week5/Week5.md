@@ -32,7 +32,7 @@ $$
 
 #### Code implementation:
 
-![Figure_0](\Hp_pics\Figure_0.png)
+![Figure_0](master\Current_Progress\Hp_pics\Figure_0.png)
 
 #### Case1:
 
