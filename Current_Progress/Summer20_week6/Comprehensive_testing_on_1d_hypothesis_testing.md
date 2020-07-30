@@ -41,7 +41,7 @@ Calculate how many sample points in the region that we decide $H_1$ when $H_1$ i
 
 Key function:
 
-![fig2](/home/zhaoliang/Data-ZZL/week6_intermediate_results/fig2.png)
+![fig2](/Current_Progress/Summer20_week6/figs/fig2.png)
 
 ## Program 3
 
@@ -51,7 +51,7 @@ Compare the error probabilities $P_D,P_{FA},P_M,P_{CR}$ from theoretical equatio
 
 Key function:
 
-![fig3](/home/zhaoliang/Data-ZZL/week6_intermediate_results/fig3.png)
+![fig3](/Current_Progress/Summer20_week6/figs/fig3.png)
 
 ### Comprehensive test
 
@@ -63,7 +63,7 @@ Test different mean with the same variance:
 
 $mean_0 = 0,mean_1 = \{-10 \sim 10\}, var_0 = 0.5, var_1 = 0.5$
 
-![fig4](/home/zhaoliang/Data-ZZL/week6_intermediate_results/fig4.png)
+![fig4](/Current_Progress/Summer20_week6/figs/fig4.png)
 
 Results:
 mean and variance of $Prob_{xx}^{error} = Prob_{xx}^{program1} - Prob_{xx}^{program2}$ where, $xx:=\{D,FA,M,CR\}$
@@ -104,7 +104,7 @@ Test different mean with different variance:
 
 $mean_0 = 0,mean_1 = \{-10 \sim 10\}, var_0 = 0.5, var_1 = \{0.1 \sim 10\}$:
 
-![fig5](/home/zhaoliang/Data-ZZL/week6_intermediate_results/fig5.png)
+![fig5](/Current_Progress/Summer20_week6/figs/fig5.png)
 
 results:
 
