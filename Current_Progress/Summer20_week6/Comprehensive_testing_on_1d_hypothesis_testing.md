@@ -29,7 +29,7 @@ $$
 
 ### Code implementation
 
-![fig1](/home/zhaoliang/Data-ZZL/week6_intermediate_results/fig1.png)
+![fig1](/Current_Progress/week6_intermediate_results/fig1.png)
 
 ## Program 2
 
