@@ -29,7 +29,7 @@ $$
 
 ### Code implementation
 
-![fig1](/Current_Progress/week6_intermediate_results/fig1.png)
+![fig1](/Current_Progress/Summer20_week6/fig1/fig1.png)
 
 ## Program 2
 
