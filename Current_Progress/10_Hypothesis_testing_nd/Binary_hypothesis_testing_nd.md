@@ -1,5 +1,7 @@
 # Binary hypothesis testing nd
 
+## N-dimension binary hypothesis testing equations 
+
 $$
 u_t=\left\{
 \begin{aligned}
@@ -22,6 +24,8 @@ $$
 Based on these equations, for high-dimensional cases, we used sampling based algorithm to calculate the intersection and $P_D,P_{FA},P_M,P_{CR}$
 
 Take 2d cases as example. In the following pictures, The red region is where $abs(f(HB∗1,σ^2) - f(HB∗0,σ^2))<0.001$
+
+## Case study
 
 ### Scenario 1:
 
@@ -168,4 +172,24 @@ $$
 $P_D = 0.9867,P_{FA}=0.1344,P_M=0.0433,P_{CR}= 0.8656$
 
 ![Figure_1](figs/Figure_9.png)
+
+## Key challenges
+
+#### calculate the 3 $\sigma$ boundary
+
+Sampling based algorithm to calculate the error probabilities $P_{D,M,CR,FA}$ and intersection is computational expensive. So we need to know the 3 $\sigma$ rule boundary of two normal distribution to figure out the total boundary.
+
+To be more specific, in the following picture, how to calculate the $x_{range}=-4.2 \sim 6.3$ and $y_{range} = -4.2 \sim 6.3$ ?
+
+![Figure_1](figs/Figure_11.png)
+
+**Solution:** 
+
+Mahalanobis distance:
+
+$d = \sqrt{(x-\mu)^T\Sigma^{-1}(x-\mu)}$
+
+if $d=3.0$, it corresponds to the "3-sigma"
+
+
 
