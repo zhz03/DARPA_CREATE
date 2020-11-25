@@ -84,7 +84,21 @@ There are four possibilities:
   \end{aligned}
   \right.
   $$
-  $\mu_{u_t} = \mathbf{E}[z_{t+1} - H\mu_{t+1|t}] = \mathbf{E}[Hx_{t+1}+v_t - H\mu_{t+1|t}] = \mathbf{E}[HA\mu_{t|t}+v_t - H(A\mu_{t|t} + Bu_t)] = \mathbf{E}[v_t + HBu_t] = HB\mathbf{E}[u_t]$
+  where,
 
+  $\mu_{u_t} = \mathbf{E}[z_{t+1} - H\mu_{t+1|t}] = \mathbf{E}[Hx_{t+1}+v_t - H\mu_{t+1|t}] = \mathbf{E}[HA\mu_{t|t}+v_t - H(A\mu_{t|t} + Bu_t)] = \mathbf{E}[v_t + HBu_t] = HB\mathbf{E}[u_t]$
+  
   $\Sigma_{u_t}=\mathbf{Var}[z_{t+1} - H\mu_{t+1|t}]\overset{indepen}{=}\mathbf{Var}[z_{t+1}] = \mathbf{Var}[Hx_{t+1}+v_t ] = H\Sigma_{t+1|t}H^{-1} + R = H(A\Sigma_{t|t}A^T + Q)H^{-1} + R$ 
+  
+  Therefore, the error probabilities $P_{D},P_{FA},P_{M},P_{CR}$ can be calculate using the following equations:
+  
+  $P_D = \int_{\lambda}^{\infty}pdf_{H_1}(U)=\int_{\lambda}^{\infty}\mathbf{N}(\mu_{u^2},\Sigma_{u^2})$
+  
+  $P_{FA} = \int_{\lambda}^{\infty}pdf_{H_0}(U)=\int_{\lambda}^{\infty}\mathbf{N}(\mu_{u^1},\Sigma_{u^1})$
+  
+  $P_M=1-P_D$
+  
+  $P_{CR}=1-P_{FA}$
+  
+  where, $\lambda$ is when $\mathbf{N}(\mu_{u^2},\Sigma_{u^2}) = \mathbf{N}(\mu_{u^1},\Sigma_{u^1}) $
 
