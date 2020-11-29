@@ -102,3 +102,74 @@ There are four possibilities:
   
   where, $\lambda$ is when $\mathbf{N}(\mu_{u^2},\Sigma_{u^2}) = \mathbf{N}(\mu_{u^1},\Sigma_{u^1}) $
 
+## 2 Problem extension
+
+### Problem statement - multi - time step binary hypothesis
+
+- Given A,B,H,Q,R of a sensor. We will use this particular sensor to observe physical quantities for a long period of time (ex: t=100). Assuming in the next period of time t+1:t+n, given u_t=1 or 0,
+
+- Compute the probability that decide u_t=1 given the fact that u_t=1 ? the probability that decide u_t=0 given the fact that u_t=1 ? the probability that decide u_t=1 given the fact that u_t=0 ? the probability that decide u_t=0 given the fact that u_t=0 ?
+
+### problem solution 
+
+Same solution can be applied in this problem. The only difference is instead of calculating the error probabilities on single time step $t+1$, we could applied the same method to the following each time step: $t+1:t+k$ .
+
+## 3 More complicated problem
+
+  ### Problem statement
+
+Given a sensor (MIMO) system model {A,B,H,Q,R} with multiple observables, we will use this sensor to measure multiple physical quantities for a duration of time T with no events. We will then use the sensed n-d measured data (event happens) over the next $\{T+1,…,T+k\}$ to estimate the n-d input $u_t^n$ of this participant sensor.
+
+What are the error probabilities ($P_D,P_{FA},P_{M},P_{CR}$) of the sensor with multiple observables? 
+
+### Problem clarification
+
+For this problem, the numerical way of calculating this error probabilities is hard and for this, we developed a sampling based algorithm to calculate the n-dimensional states binary error probabilities (True positive, True negative, false positive, false negative)
+
+N-d state binary hypothesis:
+
+- $H_0$: $u_t^1=[0 0 ... 0]^T$
+- $H_1$: $u_t^2=[1 1 ... 1]^T$
+
+Thus we have four probabilities:
+
+- $H_1$ is true, decide $H_1$ : given the H1 is true hypothesis, decide H1 is in force: $Prob(decide H_1|H_1 true)=P_D = \int_D \mathbf{N}(\mu_{u^2},\Sigma_{u^2})$
+
+- $H_0$ is true, decide $H_1$ : given the H0 is true hypothesis, decide H1 is in force: $Prob(decide H_1|H_0 true) = P_{FA} = \int_D \mathbf{N}(\mu_{u^1},\Sigma_{u^1})$
+
+- $H_1$ is true, decide $H_0$ :  $Prob(decide H_0|H_1 true) = P_{M} = 1 - P_{D}$
+
+- $H_0$ is true, decide $H_0$:  $Prob(decide H_0|H_0 true) = P_{CR} = 1 - P_{FA}$
+
+  where $D = {\mathbf{N}(\mu_{u^2},\Sigma_{u^2}) > \mathbf{N}(\mu_{u^1},\Sigma_{u^1})}$
+
+### Problem solution
+
+sampling based algorithm
+
+## 4 Complicated problem extension
+
+### Problem statement
+
+Given a sensor (MIMO) system model ${A,B,H,Q,R}$ with multiple (n-d state) observables, we will use this sensor to measure multiple physical quantities for a duration of time T with no events. We will then use the sensed n-d measured data over the next ${T+1,…,T+k}$ to estimate the m-d input $u_t^m$ (multiple hypotheses) of this participant sensor. 
+
+what is the error probabilities of multiple hypotheses?
+
+### Problem clarification 
+
+In this problem, there are N-d state multiple hypotheses:
+
+- $H_0: u_t:[0,0...0]^T$
+- $H_1: u_t:[1,1...1]^T$
+- $H_2: u_t:[2,2...2]^T$
+- ...
+- $H_m: u_t:[m,m...m]^T$
+
+We need to calculate $Prob\{decide H_j|H_j true\} \in \mathbf{R}^{m^2}$
+
+$Prob\{decide H_j|H_j true\}$: = {set of probabilities when $H_i$ is true and decide $H_j$}​
+
+### Problem solution 
+
+Developed a new sampling based algorithm to calculate the N-d state multiple error probabilities. 
+
